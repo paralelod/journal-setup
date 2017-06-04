@@ -1,0 +1,28 @@
+---
+layout: page
+---
+
+<div class="page-content">
+   <h1>✏️ Venture Design</h1>
+  <div class="mdl-grid">
+     
+    {% for post in site.posts reversed  %}
+        <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--12-col-phone" style="background:#ffe81a;">
+          <div class="mdl-card__title" {% if post.image %} style="background: url('{{ post.image }}') center/cover;" {% endif %}>
+            <!--<h2 class="mdl-card__title-text">{{ post.title }}</h2>-->
+          </div>
+          <div class="mdl-card__supporting-text">
+            <h2 class="mdl-card__title-text">{{ post.title }}</h2>
+            <br>
+            <!--<span>{{ post.date | date: "%b %-d, %Y" }}</span>-->
+            <!--<p>{{ post.categories }}</p>-->
+            <!--<p>{{ post.description }}</p>-->
+            <!--<p>{{ post.excerpt }}</p>-->
+          </div>
+          <div class="mdl-card__actions mdl-card--border">
+            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ post.url | prepend: site.baseurl }}">Read More</a>
+          </div>
+        </div>
+    {% endfor %}
+  </div>
+</div>
