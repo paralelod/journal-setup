@@ -1,0 +1,48 @@
+
+//
+// Main sass file, to import all styles
+//
+
+@charset "utf-8";
+
+$spacing-unit:     30px;
+$super-search:     rgba(0, 191, 255, 0.85);
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting",
+        "post",
+        "search"
+;
+
+.mdl-layout__header {
+        background: #000;
+}
+
+.section-highlight button {
+        z-index: 1;
+}
+.mdl-card .mdl-card__title {
+        height: 214px;
+}
+
+.mdl-card__actions.mdl-card--border {
+    border: none;
+}
+
+.mdl-button.mdl-button--colored {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.mdl-card__supporting-text {
+        color: black;
+}
+
+
