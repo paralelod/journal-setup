@@ -1,5 +1,0 @@
-dist
-src/_build
-src/node_modules/
-src/.sass-cache
-.publish
