@@ -1,13 +1,92 @@
 ---
-layout: page
+layout: default
+title: "valdir maluco"
 ---
-
 <div class="page-content">
-   <h1>✏️ Venture Design</h1>
+    <h1 style="padding-left:1rem;">📚 Articles</h1>
+    <!--<h3>🚀 BUSINESS, 💩 CREATIVITY and 🌻 ECOLOGY, <br> 🎨 ART, 🌞 DESIGN, 🤖 TECHNOLOGY</h3>-->
+    <div class="mdl-grid">
+        
+    
+        
+            <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--12-col-phone" style="background:#ffe81a;">
+                <div class="mdl-card__title" style="background: url('{{ post.image }}') center/cover;">
+                    <!--<h2 class="mdl-card__title-text">{{ post.title }}</h2>-->
+                </div>
+                <div class="mdl-card__supporting-text">
+                    <h2 class="mdl-card__title-text">🚀 BUSINESS</h2>
+                    <br>
+                    <!--<span>{{ post.date | date: "%b %-d, %Y" }}</span>-->
+                    <p>Inspiration, Projects and Frameworks</p>
+                    <!--<p>{{ post.description }}</p>-->
+                    <!--<p>{{ post.excerpt }}</p>-->
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ post.url | prepend: site.baseurl }}">See All</a>
+                </div>
+            </div>
+
+            <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--12-col-phone" style="background:#ffe81a;">
+            <div class="mdl-card__title" style="background: url('{{ post.image }}') center/cover;">
+                <!--<h2 class="mdl-card__title-text">{{ post.title }}</h2>-->
+            </div>
+            <div class="mdl-card__supporting-text">
+                <h2 class="mdl-card__title-text">🐙 DESIGN</h2>
+                <br>
+                <!--<span>{{ post.date | date: "%b %-d, %Y" }}</span>-->
+                <p>Skills, Methods and Tools</p>
+                <!--<p>{{ post.description }}</p>-->
+                <!--<p>{{ post.excerpt }}</p>-->
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ post.url | prepend: site.baseurl }}">See All</a>
+            </div>
+            </div>
+
+            <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--12-col-phone" style="background:#ffe81a;">
+            <div class="mdl-card__title" style="background: url('{{ post.image }}') center/cover;">
+                <!--<h2 class="mdl-card__title-text">{{ post.title }}</h2>-->
+            </div>
+            <div class="mdl-card__supporting-text">
+                <h2 class="mdl-card__title-text">🤖 TECHNOLOGY</h2>
+                <br>
+                <!--<span>{{ post.date | date: "%b %-d, %Y" }}</span>-->
+                <p>Tutorials, Explorations and Learnings</p>
+                <!--<p>{{ post.description }}</p>-->
+                <!--<p>{{ post.excerpt }}</p>-->
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ post.url | prepend: site.baseurl }}">See All</a>
+            </div>
+            </div>
+
+            <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--12-col-phone mdl-cell--hide-desktop" style="background:#ffe81a;">
+                <div class="mdl-card__title" style="background: url('{{ post.image }}') center/cover;">
+                    <!--<h2 class="mdl-card__title-text">{{ post.title }}</h2>-->
+                </div>
+                <div class="mdl-card__supporting-text">
+                    <h2 class="mdl-card__title-text">🚀 WORK</h2>
+                    <br>
+                    <!--<span>{{ post.date | date: "%b %-d, %Y" }}</span>-->
+                    <p>I'm PRODUCT & EXPERIENCE DESIGNER</p>
+                    <!--<p>{{ post.description }}</p>-->
+                    <!--<p>{{ post.excerpt }}</p>-->
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ post.url | prepend: site.baseurl }}">Go to Page</a>
+                </div>
+            </div>
+
+    </div>
+
+
+   <h1 style="padding-left:1rem;">✏️ Recent ...</h1>
   <div class="mdl-grid">
      
-    {% for post in site.posts reversed  %}
+    {% for post in site.posts reversed limit:12  %}
+      
         <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--12-col-phone" style="background:#ffe81a;">
+             <a href="{{ post.url | prepend: site.baseurl }}" style="text-decoration:none">
           <div class="mdl-card__title" {% if post.image %} style="background: url('{{ post.image }}') center/cover;" {% endif %}>
             <!--<h2 class="mdl-card__title-text">{{ post.title }}</h2>-->
           </div>
@@ -22,7 +101,37 @@ layout: page
           <div class="mdl-card__actions mdl-card--border">
             <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ post.url | prepend: site.baseurl }}">Read More</a>
           </div>
+          <!--<div class="mdl-card__menu">
+            <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="post-{{ post.id }}">
+              <i class="material-icons">share</i>
+            </button>
+            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="post-{{ post.id }}">
+              <li><a href="https://www.facebook.com/dialog/share?app_id={{site.facebook_app_id}}&display=page&href={{ post.url | prepend: site.baseurl }}&redirect_uri={{ site.baseurl }}" class="mdl-menu__item">Facebook</a></li>
+              <li><a href="https://twitter.com/share?url={{ post.url | prepend: site.baseurl }}&text={{ post.title }}&via={{ site.twitter_username }}" class="mdl-menu__item">Twitter</a></li>
+              <li><a href="https://plus.google.com/share?url={{ post.url | prepend: site.baseurl }}" class="mdl-menu__item">Google+</a></li>
+            </ul>
+          </div>-->
+             </a>
         </div>
+
     {% endfor %}
-  </div>
+
+        <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--12-col-phone" style="background:#ffe81a;">
+          <div class="mdl-card__title" style="background: url('{{ post.image }}') center/cover;">
+            <!--<h2 class="mdl-card__title-text">{{ post.title }}</h2>-->
+          </div>
+          <div class="mdl-card__supporting-text">
+            <h2 class="mdl-card__title-text">MORE ARTICLES 👉</h2>
+            <br>
+            <!--<span>{{ post.date | date: "%b %-d, %Y" }}</span>-->
+            <p>Explore my crazy, sentimental , insirational articles </p>
+            <!--<p>{{ post.description }}</p>-->
+            <!--<p>{{ post.excerpt }}</p>-->
+          </div>
+          <div class="mdl-card__actions mdl-card--border">
+            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ post.url | prepend: site.baseurl }}">See All</a>
+          </div>
+        </div>
+
+    </div>
 </div>
