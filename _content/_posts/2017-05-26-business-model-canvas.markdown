@@ -4,7 +4,7 @@ title:  "Business Model Canvas - First Pass"
 date:   2017-05-26 12:11:11
 categories: "Venture Design"
 author: Diogo Russo
-image: https://dl.dropboxusercontent.com/u/266981231/imgforest/test4.png
+image: https://dl.dropboxusercontent.com/u/266981231/imgforest/test5.png
 ---
 
 Validate Your Business Ideas with a Business Model and Structured Experiments, Not a Business Plan!!!

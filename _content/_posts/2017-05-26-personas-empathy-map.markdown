@@ -4,7 +4,7 @@ title:  "Personas Building and Empathy Map"
 date:   2017-05-26 13:11:11
 categories: "Venture Design"
 author: Oscar Cortez
-image: https://dl.dropboxusercontent.com/u/266981231/imgforest/test4.png
+image: https://dl.dropboxusercontent.com/u/266981231/imgforest/test8.png
 ---
 
 Validate Your Business Ideas with a Business Model and Structured Experiments, Not a Business Plan!!!
